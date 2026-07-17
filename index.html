@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVCONF Website</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <!-- Logo images -->
+                <img src="./assets/logo.png" alt="DEVCONF 2026" style="height: 35px;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <a href="#register" class="btn-primary nav-btn">Register Now</a>
+        </div>
+    </nav>
+
+    <!-- Banner (Hero) Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Code. <i>Connect</i>. Create</h1>
+            <p>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
+            <a href="#register" class="btn-primary hero-btn">Register Now</a>
+        </div>
+    </header>
+
+
+    <!-- Meet the Speakers Section -->
+    <section id="speakers" class="speakers-section">
+        <div class="container">
+            <h2 class="section-title">Meet the Speakers</h2>
+            <div class="speakers-grid">
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <!-- Speaker Image -->
+                    <img src="./assets/andrej.png" alt="Andrej Karpathy">
+                    <div class="speaker-info">
+                        <span class="track-label">AI / ML</span>
+                        <h3>Andrej Karpathy</h3>
+                        <p>Researching Vision, Anthropic</p>
+                    </div>
+                </div>
+                
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <img src="./assets/demis.png" alt="Demis Hassabis">
+                    <div class="speaker-info">
+                        <span class="track-label">CLOUD & DEVOPS</span>
+                        <h3>Demis Hassabis</h3>
+                        <p>Co-Founder and CEO, Google DeepMind</p>
+                    </div>
+                </div>
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <img src="./assets/gary.png" alt="Gary Marcus">
+                    <div class="speaker-info">
+                        <span class="track-label">FRONTEND</span>
+                        <h3>Gary Marcus</h3>
+                        <p>Staff Engineer, Vercel</p>
+                    </div>
+                </div>
+                <!-- Speaker 4 -->
+                <div class="speaker-card">
+                    <img src="./assets/mustafa.png" alt="Mustafa Suleyman">
+                    <div class="speaker-info">
+                        <span class="track-label">SECURITY</span>
+                        <h3>Mustafa Suleyman</h3>
+                        <p>CEO of Microsoft AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secure Your Spot Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Secure Your Spot</h2>
+            <p class="section-subtitle">Early-bird pricing ends August 15, 2026.</p>
+            
+            <div class="pricing-grid">
+                <!-- Standard Plan -->
+                <div class="pricing-card">
+                    <span class="plan-name">STANDARD</span>
+                    <h3 class="plan-price">$399</h3>
+                    <p class="plan-per">per person</p>
+                    <ul class="plan-features">
+                        <li>Access to all 3 conference days</li>
+                        <li>40 curated technical talks</li>
+                        <li>2 workshop sessions</li>
+                        <li>Networking lunch & coffee breaks</li>
+                        <li>Conference swag bag</li>
+                        <li>Digital recordings (30 days)</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Get Standard</a>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <span class="plan-name">PRO</span>
+                    <h3 class="plan-price">$749</h3>
+                    <p class="plan-per">per person</p>
+                    <ul class="plan-features">
+                        <li>Everything in Standard</li>
+                        <li>Unlimited workshop access</li>
+                        <li>Speaker meet & greet</li>
+                        <li>VIP networking dinner</li>
+                        <li>Lifetime recording access</li>
+                        <li>1-on-1 mentorship (30 min)</li>
+                    </ul>
+                    <a href="#" class="btn-primary">Get Pro</a>
+                </div>
+
+                <!-- Team Plan -->
+                <div class="pricing-card">
+                    <span class="plan-name">TEAM</span>
+                    <h3 class="plan-price">$5,999</h3>
+                    <p class="plan-per">up to 10 people</p>
+                    <ul class="plan-features">
+                        <li>Everything in Pro (10 seats)</li>
+                        <li>Dedicated team lounge access</li>
+                        <li>Private workshop booking</li>
+                        <li>Company logo on event page</li>
+                        <li>Recruitment booth (1-day)</li>
+                        <li>Priority customer support</li>
+                    </ul>
+                    <a href="#" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Sponsors Section -->
+    <section id="sponsors" class="sponsors-section">
+        <div class="container">
+            <h2 class="section-title">Trusted By Industry Leaders</h2>
+            <p class="section-subtitle">Our amazing sponsors who make DEVCONF 2026 possible.</p>
+            <div class="sponsor-logos">
+                <div class="sponsor-box">TechNova</div>
+                <div class="sponsor-box">CloudFlow</div>
+                <div class="sponsor-box">DevSync</div>
+                <div class="sponsor-box">CodeStream</div>
+                <div class="sponsor-box">DataSphere</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <!-- Footer Logo -->
+                    <img src="./assets/footer-logo.png" alt="DEVCONF 2026" style="height: 35px;">
+                </div>
+                <!-- Social Media Links Added -->
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 DEVCONF. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

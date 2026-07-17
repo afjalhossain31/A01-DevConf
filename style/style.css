@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #FAFAFA;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================= Variables ================= */
+:root {
+    --primary-blue: #1D4ED8;
+    --primary-blue-hover: #1E40AF;
+    --dark-bg: #0F172A;
+    --text-muted: #64748B;
+    --border-color: #E2E8F0;
+    --white: #FFFFFF;
+}
+
+/* ================= Buttons ================= */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    /* transition: background 0.3s ease; */
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-blue-hover);
+}
+
+.btn-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+/* ================= Navbar ================= */
+.navbar {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #596370;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: var(--primary-blue); 
+}
+
+/* ================= Hero Banner ================= */
+.hero {
+    position: relative;
+    /* Banner Image */
+    background-image: url('../assets/banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 650px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15, 23, 42, 0.75);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; 
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 56px; 
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 i {
+    font-family: serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero-content p { /* Paragraph Text */
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #E2E8F0;
+}
+
+/* ================= Section Titles ================= */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--dark-bg);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+/* ================= Meet the Speakers ================= */
+.speakers-section {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.speaker-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top; /* ছবি যেন মাথা থেকে ফোকাস হয় */
+}
+
+.speaker-info {
+    padding: 20px;
+}
+
+.track-label {
+    display: inline-block;
+    color: var(--primary-blue);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.speaker-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--dark-bg);
+}
+
+.speaker-info p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* ================= Secure Your Spot Section / Pricing Section ================= */
+.pricing-section {
+    padding: 80px 0;
+}
+
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 40px 30px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.pricing-card.featured {
+    background: var(--dark-bg);
+    color: var(--white);
+    border-color: var(--dark-bg);
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.plan-name {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.featured .plan-name {
+    color: #94A3B8;
+}
+
+.plan-price {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.plan-per {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.featured .plan-per {
+    color: #94A3B8;
+}
+
+.plan-features {
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    font-size: 14px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+    color: #475569;
+}
+
+.featured .plan-features li {
+    color: #E2E8F0;
+}
+
+.plan-features li::before {
+    content: '•';
+    color: var(--primary-blue);
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    line-height: 14px;
+}
+
+.featured .plan-features li::before {
+    color: #60A5FA;
+}
+
+.pricing-card .btn-outline, 
+.pricing-card .btn-primary {
+    text-align: center;
+    width: 100%;
+}
+
+/* ================= Our Sponsors Section ================= */
+.sponsors-section {
+    padding: 60px 0;
+    background-color: var(--white);
+    border-top: 1px solid var(--border-color);
+}
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.sponsor-box {
+    padding: 20px 40px;
+    background-color: #F1F5F9;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #558dd7;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.sponsor-box:hover {
+    background-color: var(--border-color);
+    color: var(--dark-bg);
+}
+
+
+/* ================= Footer ================= */
+.footer {
+    /* ekhane Color Add kora hoiche */
+    background-color: var(--dark-bg); 
+    padding: 70px 20px 30px; 
+    color: var(--white);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    /* Social Media Link Colors */
+    color: #94A3B8; 
+    font-size: 22px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--white); 
+    transform: translateY(-4px); 
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #1E293B; 
+    margin-bottom: 25px;
+}
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 14px;
+    color: #94A3B8;
+}
